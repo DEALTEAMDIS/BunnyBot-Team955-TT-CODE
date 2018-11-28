@@ -1,0 +1,4 @@
+#include <togglepneu.h>
+void hopper::run_hopper(){
+hopper_toggle->run_toggle_p(5);
+}

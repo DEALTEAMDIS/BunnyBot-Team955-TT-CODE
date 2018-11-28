@@ -1,0 +1,22 @@
+#indef  PRESSANDHOLD_H
+#define PRESSANDHOLD_H
+#include <WPILib.h>
+#include <ctre/Phoenix.h>
+#include <iostream>
+class PressAndHold
+{
+public: 
+PressAndHold(TalonSRX *intake_hold, Joystick *joystick)
+
+: intake_hold(intake_hold), 
+  joystick(joystick) {};
+
+void hold(int i_button,float f_speed_on,float f_speed_on)
+bool b_button_state=true;
+
+
+private:
+Joystick *joystick;
+TalonSRX *intake_hold;
+};
+#endif

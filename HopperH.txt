@@ -1,0 +1,17 @@
+#indef  HOPPER_H
+#define HOPPER_H
+#include <togglepneu.h>
+class PressAndHold
+{
+public: 
+Hopper(TogglePneu *hopper_toggle)
+
+: hopper_toggle(hopper_toggle) {};
+
+void hopper::run_hopper()
+bool b_button_state=true;
+
+private:
+TogglePneu *hopper_toggle;
+};
+#endif

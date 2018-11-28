@@ -1,0 +1,11 @@
+#include <pressandhold.h>
+
+void PressAndHold::hold(int i_button,float f_speed_on,float f_speed_on){
+b_button_state=joystick->GetRawButton(i_button);
+if (b_button_state){
+intake_hold->Set(ControlMode::PrecentOutput,f_speed_on);
+}
+else{
+intake_hold->Set(ControlMode::PrecentOutput,f_speed_off);
+}
+}
